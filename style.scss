@@ -41,8 +41,14 @@ body {
 }
 
 .nav-link {
+    background-color: $tertiary-color;
+    border: none;
+    color: $primary-color;
+    padding: 3px 20px;
+    text-align: center;
     text-decoration: none;
-    color: white;
+    display: inline-block;
+    border-radius: 16px;
 }
 
 .right-nav-link {
@@ -50,7 +56,8 @@ body {
 }
 
 .nav-link:hover {
-    color: $secondary-color;
+    color: $tertiary-color;
+    background-color: $secondary-color;
 }
 
 @media screen and (max-width: 1680px) {
