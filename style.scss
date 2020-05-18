@@ -71,8 +71,12 @@ body {
     }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 414px) {
     #header {
         font-size: 11pt;
+    }
+
+    .right-nav-link {
+        margin-left: 1em;
     }
 }
