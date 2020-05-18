@@ -61,10 +61,7 @@ body {
   color: #eb593d;
 }
 
-@media (max-width: 800px) {
-  body {
-    background-color: yellow;
-  }
+@media (max-width: 1250px) {
   #name {
     font-size: 2vh;
   }
