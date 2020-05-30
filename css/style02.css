@@ -1,10 +1,93 @@
-body {
-  background-color: red;
+@import url("https://fonts.googleapis.com/css2?family=Roboto");
+/* Fonts */
+/* Colours */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-@media only screen and (max-width: 450px) {
-  body {
-    background-color: yellow;
-  }
+body {
+  background-color: #CEB7B3;
+  font-family: "Roboto", sans-serif;
+}
+
+body #header {
+  background-color: #333232;
+  color: #F5F5F5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 9vh;
+  position: fixed;
+}
+
+body #header #name {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-weight: bold;
+  font-size: 24pt;
+}
+
+body #header #nav-menu {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 18pt;
+  background-color: #3E3D3D;
+}
+
+body #header #nav-menu .nav-link {
+  text-decoration: none;
+  color: #F5F5F5;
+  padding: 10px 20px;
+}
+
+body section {
+  height: 100vh;
+  padding-top: 9vh;
+}
+
+body #section-a {
+  background-image: url(../images/welcome_bg.jpg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body #section-a header {
+  text-align: center;
+  font-size: 40pt;
+}
+
+body #section-a article {
+  font-size: 20pt;
+  padding-top: 1.2em;
+}
+
+body #section-a, body #section-c {
+  background-color: #0A0A0A;
+  color: #F5F5F5;
 }
 /*# sourceMappingURL=style02.css.map */

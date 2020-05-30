@@ -1,9 +1,81 @@
-body {
-    background-color: red;
+@import url('https://fonts.googleapis.com/css2?family=Roboto');
+
+/* Fonts */
+$text: 'Roboto', sans-serif;
+
+
+/* Colours */
+$colour0: #0A0A0A;
+$colour1: #333232;
+$colour2: #3E3D3D;
+$colour3: #CEB7B3;
+$colour4: #F5F5F5;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-@media only screen and (max-width: 450px) {
-    body {
-        background-color: yellow;
+body {
+    background-color: $colour3;
+    font-family: $text;
+
+    #header {
+        background-color: $colour1;
+        color: $colour4;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 9vh;
+        position: fixed;
+
+        #name {
+            align-self: center;
+            font-weight: bold;
+            font-size: 24pt;
+        }
+
+        #nav-menu {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            font-size: 18pt;
+            background-color: $colour2;
+
+            .nav-link {
+                text-decoration: none;
+                color: $colour4;
+                padding: 10px 20px;
+            }
+        }
+    }
+
+    section {
+        height: 100vh;
+        padding-top: 9vh;
+    }
+
+    #section-a {
+        background-image: url(../images/welcome_bg.jpg);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        header {
+            text-align: center;
+            font-size: 40pt;
+        }
+
+        article {
+            font-size: 20pt;
+            padding-top: 1.2em;
+        }
+    }
+
+    #section-a, #section-c {
+        background-color: $colour0;
+        color: $colour4;
     }
 }
