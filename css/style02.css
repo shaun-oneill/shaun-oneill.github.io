@@ -24,7 +24,7 @@ body #header {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-  height: 9vh;
+  height: 12vh;
   position: fixed;
 }
 
@@ -34,6 +34,7 @@ body #header #name {
       align-self: center;
   font-weight: bold;
   font-size: 24pt;
+  padding: 10px;
 }
 
 body #header #nav-menu {
@@ -44,19 +45,19 @@ body #header #nav-menu {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-size: 18pt;
+  font-size: 15pt;
   background-color: #3E3D3D;
 }
 
 body #header #nav-menu .nav-link {
   text-decoration: none;
   color: #F5F5F5;
-  padding: 10px 20px;
+  padding: 14px 20px;
 }
 
 body section {
   height: 100vh;
-  padding-top: 9vh;
+  padding-top: 12vh;
 }
 
 body #section-a {
