@@ -3,40 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style02.css">
+    <title>Shaun O'Neill - Web Developer</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header id="header">
-        <span id="name">Shaun O'Neill</span>
-        <nav id="nav-bar">
-            <ul id="nav-menu">
-                <a class="nav-link" href="#section-a"><li>Home</li></a>
-                <a class="nav-link" href="#section-b"><li>About</li></a>
-                <a class="nav-link" href="#section-c"><li>Projects</li></a>
-                <a class="nav-link" href="#section-d"><li>Contact</li></a>
-            </ul>
-        </nav>
-    </header>
+    <nav>
+        <ul class="main-nav">
+            <li>Shaun O'Neill</li>
+            <div class="container">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </div>
+        </ul>
+    </nav>
+    <div class="main-container">
+        <main class="container">
+            <section id="home" class="dark">
+                <h1>Welcome</h1>
+            </section>
 
-    <section id="section-a">
-        <header>Welcome to my portfolo.</header>
-        <article>Enjoy your stay!</article>
+            <section id="projects" class="light">
+                <h1>Projects</h1>
+            </section>
 
-    </section>
+            <section id="contact" class="dark">
+                <h1>Contact</h1>
+            </section>
+        </main>
 
-    <section id="section-b">
-        <header>About</header>
-
-    </section>
-
-    <section id="section-c">
-        <header>Projects</header>
-
-    </section>
-
-    <section id="section-d">
-        <header>Contact</header>
-    </section>
+        <footer id="footer">
+            <p>&copy; 2020 - Shaun O'Neill</p>
+        </footer>
+    </div>
 </body>
 </html>
