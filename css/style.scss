@@ -1,6 +1,7 @@
-$main: #7A7A7A;
-$light: #EBEBEB;
-$dark: #141414;
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+$main: #113449;
+$light: #8bbddd;
+$dark: #17242c;
 
 * {
     box-sizing: border-box;
@@ -12,6 +13,7 @@ body {
     height: 100%;
     width: 100%;
     background-color: $dark;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* NAV */
@@ -19,14 +21,15 @@ body {
 nav {
     position: fixed;
     width: 100%;
+    background-color: $main;
 }
 
 .main-nav {
-    background-color: $main;
     display: flex;
     list-style: none;
     font-size: 1em;
     color: $light;
+    margin: 0 25vw;
 
     .container {
         display: flex;
@@ -40,6 +43,10 @@ nav {
     a {
         color: $light;
         text-decoration: none;
+    }
+
+    a:hover {
+        color: $dark;
     }
 }
 
