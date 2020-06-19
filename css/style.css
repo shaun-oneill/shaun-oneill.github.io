@@ -101,14 +101,15 @@ section p {
 
 /* Home */
 section#home {
-  height: 40vh;
+  height: 50vh;
+  background: url(../images/welcome_bg.jpg) no-repeat center center/cover;
 }
 
 /* About */
 section#about {
   background-color: #ffffff;
   color: #261f27;
-  height: 60vh;
+  height: 50vh;
 }
 
 /* Projects */
