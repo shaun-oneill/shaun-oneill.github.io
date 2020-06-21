@@ -92,9 +92,7 @@ section {
         font-size: 4rem;
     }
 
-    p {
-        font-size: 1.5rem;
-    }
+    
 }
 
 /* Home */
@@ -111,6 +109,15 @@ section#about {
     ;
     color: $colour2;
     height: 50vh;
+    p {
+        font-size: 1.5rem;
+        width: 80%;
+
+        a {
+            text-decoration: none;
+            color: $colour1;
+        }
+    }
 }
 
 /* Projects */
@@ -189,7 +196,17 @@ section#contact {
     background-color: $colour3;
     color: $colour2;
     height: 70vh;
-    background: url('../images/contact_bg.jpg') no-repeat center center/cover;;
+    text-align: left;
+
+    p {
+        font-size: 1.5rem;
+        width: 50%;
+
+        a {
+            text-decoration: none;
+            color: $colour1;
+        }
+    }
 }
 
 /* Footer */
