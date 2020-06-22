@@ -16,7 +16,7 @@
             <ul>
                 <li class="navname">Shaun O'Neill</li>
                 <li class="navlink"><a href="#home">Home</a></li>
-                <li class="navlink"><a href="#about">About</a></li>
+                <!-- <li class="navlink"><a href="#about">About</a></li> -->
                 <li class="navlink"><a href="#projects">Projects</a></li>
                 <li class="navlink"><a href="#contact">Contact</a></li>
             </ul>
@@ -26,18 +26,18 @@
 
         <section id="home">
             <h1>Welcome</h1>
-            <p>My name is Shaun O'Neill and I am a web developer.</p>
+            <p>My name is Shaun O'Neill and I am a web developer based out of Toronto, Ontario, Canada.</p>
+            <a class="cta-btn" href="#projects">Check out a few of my projects!</a>
         </section>
 
         <!-- About -->
 
-        <section id="about">
+        <!-- <section id="about">
             <h1>About</h1>
-            <p>I have a strong passion for web development and am always looking to further my knowledge. 
-                I am well versed in HTML5, CSS3 and Javascript, and I am familiar with React. 
-                I also have some knowledge working with mongoDB and other database structures.
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Quo natus sapiente ea eius blanditiis neque, animi ut odit consectetur magni.
             </p>
-        </section>
+        </section> -->
 
         <!-- Projects -->
 
@@ -76,6 +76,20 @@
                 </div>
 
                 <div class="project-box">
+                    <a href="https://github.com/shaun-oneill/shaun-oneill.github.io">
+                        <img src="./images/thumb_portfolio.png" alt="Portfolio preview">
+                    </a>
+                    <h2 class="project-name">Portfolio Site</h2>
+                    <p class="project-description">
+                        This portfolio was built and designed using HTML5 and Sass.
+                        To demo the site simply scroll up and down.
+                        Optimized for mobile.
+                    </p>
+                    <a class="code"
+                        href="https://github.com/shaun-oneill/shaun-oneill.github.io">Code</a>
+                </div>
+
+                <div class="project-box">
                     <a href="./projects/formValidator/index.html">
                         <img src="./images/thumb_formValidator.png" alt="Form Validator preview">
                     </a>
@@ -95,8 +109,8 @@
                     </a>
                     <h2 class="project-name">Customized Video Player</h2>
                     <p class="project-description">
-                        Custom made video player.
-                        Made with HTML5, CSS3, and Javascript.
+                        Custom made video player with icons from Font Awesome.
+                        Made with HTML5, CSS3, and Javascript. Not yet optimized for mobile.
                     </p>
                     <a class="demo" href="./projects/customVideoPlayer/index.html">Demo</a>
                     <a class="code"
@@ -113,17 +127,22 @@
 
         <section id="contact">
             <h1>Contact</h1>
-            <p>
-                <label>Email:</label> <a href="mailto:mr.shaun.oneill@gmail.com">mr.shaun.oneill@gmail.com</a><br>
-                <label>LinkedIn:</label> <a
-                    href="https://www.linkedin.com/in/shauntoneill/">https://www.linkedin.com/in/shauntoneill/</a>
-            </p>
+            <div class="contact-links">
+                <a class="contact-btn" href="mailto:mr.shaun.oneill@gmail.com"><i class="fas fa-envelope fa-4x"
+                        ></i></a>
+                <a class="contact-btn" href="https://www.linkedin.com/in/shauntoneill/"><i class="fab fa-linkedin fa-4x"
+                        ></i></a>
+                <a class="contact-btn" href="https://github.com/shaun-oneill"><i class="fab fa-github fa-4x"
+                        ></i></a>
+            </div>
+            
         </section>
 
         <!-- Footer -->
 
         <footer class="footer">
             <p>&copy;2020 - Shaun O'Neill</p>
+            <i class="fab fa-canadian-maple-leaf fa-2x" style="color: rgb(165, 16, 16);"></i>
         </footer>
     </div>
 </body>

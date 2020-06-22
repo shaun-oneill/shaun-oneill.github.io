@@ -92,40 +92,58 @@ section {
         font-size: 4rem;
     }
 
-    
+    p {
+        font-size: 24px;
+    }
 }
 
 /* Home */
 
 section#home {
-    height: 50vh;
+    height: 100vh;
     background: url('../images/welcome_bg.jpg') no-repeat center center/cover;;
+
+    .cta-btn {
+        text-decoration: none;
+        font-size: 24px;
+        margin: 20px 0 0 0;
+        background-color: $colour5;
+        color: $colour2;
+        padding: 10px 15px;
+        border-radius: 20px;
+    }
+
+    .cta-btn:hover {
+        background-color: #917529;
+    }
 }
 
 /* About */
 
-section#about {
-    background: url('../images/about_bg.jpg') no-repeat center center/cover;;
-    ;
-    color: $colour2;
-    height: 50vh;
-    p {
-        font-size: 1.5rem;
-        width: 80%;
+// section#about {
+//     background: url('../images/about_bg.jpg') no-repeat center center/cover;;
+//     ;
+//     color: $colour2;
+//     height: 50vh;
+//     p {
+//         font-size: 24px;
+//         width: 80%;
 
-        a {
-            text-decoration: none;
-            color: $colour1;
-        }
-    }
-}
+//         a {
+//             text-decoration: none;
+//             color: $colour1;
+//         }
+//     }
+// }
 
 /* Projects */
 
 section#projects {
     padding: 60px 0;
-    background: url('../images/projects_bg.jpg') no-repeat center center/cover;
-    ;
+    background: url('../images/about_bg.jpg') no-repeat center center/cover;;
+    h1 {
+        color: $colour2;
+    }
 }
 
 .project-container {
@@ -138,7 +156,7 @@ section#projects {
         margin: 20px;
         width: 400px;
         height: 100%;
-        background-color: $colour3;
+        background-color: $colour2;
         border-radius: 25px;
         color: $colour2;
         padding: 15px;
@@ -158,6 +176,7 @@ section#projects {
             font-size: 16px;
             text-align: left;
             margin: 10px 0 15px 0;
+            color: $colour3;
         }
 
         .demo, .code {
@@ -193,18 +212,40 @@ section#projects {
 /* Contact */
 
 section#contact {
-    background-color: $colour3;
+    background: url('../images/projects_bg.jpg') no-repeat center center/cover;
     color: $colour2;
     height: 70vh;
     text-align: left;
 
+    h1, p {
+        color: $colour3;
+    }
+
     p {
-        font-size: 1.5rem;
-        width: 50%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding: 10px;
+        background-color: $colour1;
+    }
+
+    .contact-links {
+        background-color: rgba(49, 49, 49, 0.7);
+        width: 520px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
         a {
-            text-decoration: none;
-            color: $colour1;
+            padding: 30px;
+        }
+
+        i {
+            color: $colour3;
+        }
+
+        i:hover {
+            color: $colour5;
         }
     }
 }
@@ -212,11 +253,17 @@ section#contact {
 /* Footer */
 
 .footer {
-    background-color: rgba(0, 0, 0, .6);
+    background-color: rgba(0, 0, 0, .9);
     height: 30vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 24px;
+    flex-direction: column;
+
+    i {
+        margin-top: 15px;
+    }
 }
 
 @media only screen and (max-width: 758px) {
