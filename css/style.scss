@@ -101,7 +101,7 @@ section {
 
 section#home {
     height: 100vh;
-    background: url('../images/welcome_bg.jpg') no-repeat center center/cover;;
+    background: url('../images/bg_black1.jpg') no-repeat center center/cover;;
 
     .cta-btn {
         text-decoration: none;
@@ -115,6 +115,18 @@ section#home {
 
     .cta-btn:hover {
         background-color: #917529;
+    }
+
+    .profile-pic {
+        width: 250px;
+        border-radius: 50%;
+        padding: 25px;
+    }
+
+    p {
+        padding: 25px;
+        width: 40%;
+        background-color: rgba(0, 0, 0, .7);
     }
 }
 
@@ -140,7 +152,7 @@ section#home {
 
 section#projects {
     padding: 60px 0;
-    background: url('../images/about_bg.jpg') no-repeat center center/cover;;
+    background: url('../images/bg_white1.jpg') no-repeat center center/cover;;
     h1 {
         color: $colour2;
     }
@@ -212,7 +224,7 @@ section#projects {
 /* Contact */
 
 section#contact {
-    background: url('../images/projects_bg.jpg') no-repeat center center/cover;
+    background: url('../images/bg_black2.jpg') no-repeat center center/cover;
     color: $colour2;
     height: 70vh;
     text-align: left;
@@ -267,6 +279,12 @@ section#contact {
 }
 
 @media only screen and (max-width: 758px) {
+    section#home {
+        p {
+            font-size: 19px;
+            width: 100%;
+        }
+    }
     .navbar {
         
         ul {
