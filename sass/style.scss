@@ -6,6 +6,7 @@ $darkblue: #112446;
 $gold: #cbb167;
 $silver: #c8c8c8;
 $bronze: #c6976d;
+$black: #242424;
 
 * {
     box-sizing: border-box;
@@ -30,6 +31,7 @@ body {
     background-color: $blue;
     display: grid;
     justify-content: center;
+    overflow: auto;
 }
 
 section {
@@ -46,7 +48,6 @@ ul {
 
 a {
     text-decoration: none;
-    color: #000;
 }
 
 .line {
@@ -57,30 +58,36 @@ a {
 }
 
 // Navbar
-.nav-wrapper {
-    max-width: 900px;
-}
+// .nav-wrapper {
+//     max-width: 900px;
+//     background-color: red;
+// }
 nav {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
     align-items: center;
     height: 3em;
+    background-color: green;
 
     h1 {
         font-size: 1.5em;
         color: $gold;
-        margin-left: 1em;
     }
 
     ul {
         display: flex;
         justify-content: flex-end;
+        background-color: red;
+        justify-content: space-between;
     }
 
     a {
         font-size: 1.3em;
         color: $silver;
-        margin: 1em;
+    }
+
+    li:nth-child(3) {
+        background-color: rgb(44, 41, 41);
     }
 
     a:hover {
@@ -133,12 +140,12 @@ h2 {
 }
 
 .card {
-    background-color: rgb(36, 36, 36);
+    background-color: $black;
     color: #333;
     border-radius: 10px;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
     padding: 0em;
-    width: 450px;
+    width: 24em;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -192,4 +199,11 @@ footer {
     justify-content: center;
     padding: 1em 0;
     color: $silver;
+}
+
+@media(max-width: 500px) {
+    nav {
+        grid-template-columns: 1fr 1.25fr;
+        margin: 0 .5em;
+    }
 }
