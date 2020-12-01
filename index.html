@@ -12,7 +12,7 @@
 <body>
     <div class="container">
         <!-- Navbar -->
-        <nav>
+        <nav id="navbar">
             <h1>Shaun O'Neill</h1>
             <ul>
                 <li><a href="#home">Home</a></li>
@@ -22,6 +22,9 @@
         </nav>
 
         <span class="line"></span>
+
+        <button type="button" onclick="navbarOn()">On</button>
+        <button type="button" onclick="navbarOff()">Off</button>
 
         <!-- Home -->
         <section id="home" class="grid">
@@ -67,6 +70,8 @@
             <h3>Copyright &copy; 2020 - Shaun O'Neill</h3>
         </footer>
     </div>
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>
