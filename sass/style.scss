@@ -2,7 +2,7 @@
 
 $primary-color: rgb(134, 54, 54);
 $blue: #183263;
-$darkblue: #112446;
+$darkblue: #0f1f3b;
 $gold: #cbb167;
 $silver: #c8c8c8;
 $bronze: #c6976d;
@@ -26,20 +26,20 @@ body {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 900px;
     margin: 0 auto;
     background-color: $blue;
     display: grid;
-    justify-content: center;
     overflow: auto;
+    background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h16v2h-6v6h6v8H8v-6H2v6H0V0zm4 4h2v2H4V4zm8 8h2v2h-2v-2zm-8 0h2v2H4v-2zm8-8h2v2h-2V4z' fill='%230f1f3b' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
 }
 
 section {
-    padding: 2.5em 0;
+    padding: 2em 0;
 }
 
 .heading {
-    padding-bottom: .6em;
+    padding-bottom: .1em;
 }
 
 ul {
@@ -67,6 +67,9 @@ nav {
     grid-template-columns: 2fr 1fr;
     align-items: center;
     height: 3em;
+    background-color: $black;
+    width: 100%;
+    padding: 0 1em;
 
     h1 {
         font-size: 1.5em;
@@ -174,7 +177,7 @@ h2 {
 
 // Contact
 #contact {
-
+    background-color: $black;
     h1 {
         color: $silver;
     }
@@ -196,11 +199,11 @@ footer {
     justify-content: center;
     padding: 1em 0;
     color: $silver;
+    background-color: $black;
 }
 
 @media(max-width: 500px) {
     nav {
-        grid-template-columns: 1fr 1.25fr;
-        margin: 0 .5em;
+        grid-template-columns: 1.5fr 2fr;
     }
 }
