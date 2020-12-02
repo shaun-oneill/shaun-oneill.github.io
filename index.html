@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="#">
     <link rel="stylesheet" href="css/style.css">
     <title>Shaun O'Neill</title>
     <script src="https://kit.fontawesome.com/9ad7b5cf50.js" crossorigin="anonymous"></script>
@@ -14,17 +15,32 @@
         <!-- Navbar -->
         <nav id="navbar">
             <h1>Shaun O'Neill</h1>
-            <ul>
+            <div id="hamburger-btn" onclick="toggleMenu()">
+                <span class="ham-line"></span>
+                <span class="ham-line"></span>
+                <span class="ham-line"></span>
+            </div>
+            <ul id="links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
 
+        <div id="hamburger-menu">
+            <ul id="hamburger-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
         <span class="line"></span>
 
-        <button type="button" onclick="navbarOn()">On</button>
-        <button type="button" onclick="navbarOff()">Off</button>
+
+
+        <!-- <button type="button" onclick="navbarOn()">On</button>
+        <button type="button" onclick="navbarOff()">Off</button> -->
 
         <!-- Home -->
         <section id="home" class="grid">
