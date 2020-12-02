@@ -2,7 +2,7 @@ let check = false;
 
 function toggleMenu() {
   if (check == false) {
-    document.getElementById("hamburger-menu").style.position = "static";
+    document.getElementById("hamburger-menu").style.position = "relative";
     document.getElementById("hamburger-menu").style.zIndex = 1;
     document.getElementById("hamburger-menu").style.visibility = "visible";
     check = true;
