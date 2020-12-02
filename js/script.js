@@ -4,11 +4,13 @@ function toggleMenu() {
   if (check == false) {
     document.getElementById("hamburger-menu").style.position = "static";
     document.getElementById("hamburger-menu").style.zIndex = 1;
+    document.getElementById("hamburger-menu").style.visibility = "visible";
     check = true;
   } else {
     check = false;
     document.getElementById("hamburger-menu").style.position = "fixed";
     document.getElementById("hamburger-menu").style.zIndex = -2;
+    document.getElementById("hamburger-menu").style.visibility = "hidden";
   }
 }
 
