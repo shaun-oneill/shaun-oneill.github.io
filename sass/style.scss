@@ -101,6 +101,7 @@ nav {
 #hamburger-menu {
     position: fixed;
     z-index: -1;
+    visibility: hidden;
 }
 
 button {
@@ -229,6 +230,7 @@ footer {
     #hamburger-btn {
         position: static;
         z-index: 1;
+        visibility: visible;
         display: flex;
         flex-direction: column;
         justify-self: end;
@@ -245,19 +247,26 @@ footer {
     }
 
     #hamburger-menu {
-        background-color: $bronze;
-
+        background-color: #303030;
+        position: absolute;
+        z-index: 1;
+        visibility: hidden;
+        width: 10em;
+        margin-top: 3em;
+        display: flex;
+        justify-content: flex-end;
+        justify-self: flex-end;
+        text-align: right;
+        padding-right: .5em;
+        border-left: 3px solid rgba(200, 200, 200, 0.3);
+        border-bottom: 3px solid rgba(200, 200, 200, 0.3);
         li {
-            padding: .3em;
+            margin: .3em;
         }
 
         a {
-            color: $black;
+            color: $silver;
             font-size: 1.4em;
-        }
-
-        a:hover {
-            color: #fff;
         }
     }
 }
