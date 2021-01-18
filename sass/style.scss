@@ -19,6 +19,7 @@ body {
     font-family: 'Roboto Condensed', sans-serif;
 }
 
+
 .grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -128,10 +129,19 @@ h2 {
     font-size: 2em;
 }
 
+.site-message {
+    color: #fff;
+    width: 650px;
+    text-align: center;
+    margin: 6px 0;
+    line-height: 25px;
+    font-size: 1.4em;
+}
+
 // Home
 #home {
 
-    img {
+    #profile-pic {
         width: 170px;
         height: 170px;
         border-radius: 50%;
@@ -228,9 +238,12 @@ h2 {
     }
 }
 
+
+
 form {
     color: #fff;
     width: 600px;
+    margin-top: 20px;
 
     input, textarea {
         width: 100%;
@@ -317,7 +330,7 @@ footer {
         }
     }
 
-    form {
+    form, .site-message {
         width: 300px;
     }
 }
