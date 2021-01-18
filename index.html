@@ -53,14 +53,24 @@
             <h1 class="heading">Recent Projects</h1>
             <div class="cards">
 
-                <div class="card">
-                    <img src="images/ctp-thumb.png" alt="">
+                <div class="card link">
+                    <a href="https://christinetaitphotography.com" target="_blank"><img src="images/ctp-thumb.png"
+                            alt=""></a>
                     <h3>Christine Tait Photography</h3>
+                    <p>Website currently under construction</p>
+                </div>
+
+                <div class="card link">
+                    <a href="https://shaun-oneill.github.io/my-app/" target="_blank"><img src="images/hf-thumb.png"
+                            alt=""></a>
+                    <h3>Hero Finder</h3>
+                    <p>App made with React</p>
                 </div>
 
                 <div class="card link">
                     <a href="https://shaun-oneill.github.io/" target="_blank"><img src="images/so-thumb.png" alt=""></a>
                     <h3>First Portfolio</h3>
+                    <p>Original portfolio design</p>
                 </div>
 
             </div>
@@ -71,9 +81,28 @@
         <!-- Contact -->
         <section id="contact" class="grid">
             <h1 class="heading">Contact</h1>
+
+            <form name="contact" method="POST" data-netlify="true">
+                <p>
+                    <label>Your Name: <input type="text" name="name" /></label>
+                </p>
+                <p>
+                    <label>Your Email: <input type="email" name="email" /></label>
+                </p>
+                <p>
+                    <label>Message: <textarea name="message" rows="5"></textarea></label>
+                </p>
+                <p>
+                    <button type="submit">Send</button>
+                </p>
+            </form>
+
+
+
+
             <div class="contact-links">
-                <a href="mailto:mr.shaun.oneill@gmail.com" target="_blank"><i
-                        class="fas fa-envelope-square fa-3x"></i></a>
+                <!-- <a href="mailto:mr.shaun.oneill@gmail.com" target="_blank"><i
+                        class="fas fa-envelope-square fa-3x"></i></a> -->
                 <a href="https://www.linkedin.com/in/shauntoneill/" target="_blank"><i
                         class="fab fa-linkedin fa-3x"></i></a>
                 <a href="https://github.com/shaun-oneill" target="_blank"><i class="fab fa-github-square fa-3x"></i></a>
@@ -83,7 +112,7 @@
         </section>
 
         <footer>
-            <h3>Copyright &copy; 2020 - Shaun O'Neill</h3>
+            <h3>Copyright &copy; 2021 - Shaun O'Neill</h3>
         </footer>
     </div>
 
